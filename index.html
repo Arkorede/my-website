@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Meet Israel</title>
+  </head>
+  <body>
+    <nav class="relative container mx-auto p-6">
+      <!-- flex container -->
+      <div class="flex items-center justify-between">
+        <!-- logo -->
+        <div class="flex items-center">
+          <img src="img/water-droplet.png" alt="water-droplet" width="30" height="30" />
+          <p class="logo-text">Izrael</p>
+        </div>
+          <!-- Menu items -->
+          <div class="hidden space-x-6 md:flex">
+          <a href="#" class="text-white bg-sky-800 p-1 rounded hover:-translate-y-1 duration-200">Home</a>
+          <a href="#" class="text-white bg-sky-800 p-1 rounded hover:-translate-y-1 duration-200">About</a>
+          <a href="#" class="text-white bg-sky-800 p-1 rounded hover:-translate-y-1 duration-200">Portfolio</a>
+          <a href="#" class="text-white bg-sky-800 p-1 rounded hover:-translate-y-1 duration-200">Contact</a>
+          </div>
+
+                  <!-- Hamburger Icon -->
+        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm-w-auto sm:self-center left-6 right-6 drop-shadow-md">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <p>Hey there</p>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
