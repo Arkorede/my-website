@@ -3,14 +3,83 @@
 @tailwind utilities;
 
 body {
-  background: linear-gradient(to right, #4ca1af, #c4e0e5);
+  background: linear-gradient(to right, #e0f2fe, #bae6fd);
   background-size: 100% 100vh;
+  font-family: "Raleway", sans-serif;
   /* background-repeat: no-repeat; */
 }
 
 .logo-text {
   font-family: "Pacifico", cursive;
   font-size: 18px;
+}
+
+/* .introduce {
+  height: 100vh;
+} */
+
+#hero {
+  height: 65vh;
+}
+
+/* .greeting {
+  margin-right: 1rem;
+} */
+
+.greeting-img {
+  width: 2.5rem;
+  /* height: 2.5rem; */
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+#about {
+  height: 100vh;
+}
+
+.about-box {
+  text-align: center;
+  background-color: #1864ab;
+  /* background-image: url("../img/ocean3.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  width: 70%;
+  animation: slideInLeft 0.75s ease both;
+}
+
+/* .code {
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  background-color: #4dabf7;
+} */
+/* .about-img {
+  width: 10rem;
+  height: 10rem;
+} */
+
+.language-logo {
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+@media (max-width: 640px) {
+  .about-box {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .greeting-img {
+    width: 1.8rem;
+  }
+
+  #hero {
+    height: 100vh;
+  }
 }
 
 /* Hamburger Menu */
@@ -58,4 +127,44 @@ body {
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* ANIMATIONS */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transfrom: rotate(0deg);
+  }
+  1000% {
+    transform: rotate(0deg);
+  }
 }
