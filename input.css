@@ -18,70 +18,6 @@ body {
   height: 100vh;
 } */
 
-#hero {
-  height: 65vh;
-}
-
-/* .greeting {
-  margin-right: 1rem;
-} */
-
-.greeting-img {
-  width: 2.5rem;
-  /* height: 2.5rem; */
-  animation-name: wave-animation;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
-}
-
-#about {
-  height: 100vh;
-}
-
-.about-box {
-  text-align: center;
-  background-color: #1864ab;
-  /* background-image: url("../img/ocean3.jpg"); */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
-  width: 70%;
-  animation: slideInLeft 0.75s ease both;
-}
-
-/* .code {
-  text-align: center;
-  height: 30px;
-  width: 30px;
-  background-color: #4dabf7;
-} */
-/* .about-img {
-  width: 10rem;
-  height: 10rem;
-} */
-
-.language-logo {
-  height: 3.2rem;
-  width: 3.2rem;
-}
-
-@media (max-width: 640px) {
-  .about-box {
-    width: 85%;
-  }
-}
-
-@media (max-width: 768px) {
-  .greeting-img {
-    width: 1.8rem;
-  }
-
-  #hero {
-    height: 100vh;
-  }
-}
-
 /* Hamburger Menu */
 .hamburger {
   cursor: pointer;
@@ -129,6 +65,69 @@ body {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
+#hero {
+  height: 70vh;
+}
+
+/* .greeting {
+  margin-right: 1rem;
+} */
+
+.greeting-img {
+  width: 2.5rem;
+  /* height: 2.5rem; */
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+#about {
+  height: 100vh;
+}
+
+.about-box {
+  text-align: center;
+  background-color: #1864ab;
+  /* background-image: url("../img/ocean3.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  width: 70%;
+  animation: slideInLeft 0.75s ease both;
+}
+
+.project {
+  animation: fadeIn ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.project img {
+  display: block;
+  transition: all 0.4s;
+}
+
+.project img:hover {
+  transform: scale(1.1);
+}
+
+/* .code {
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  background-color: #4dabf7;
+} */
+/* .about-img {
+  width: 10rem;
+  height: 10rem;
+} */
+
+.language-logo {
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
 /* ANIMATIONS */
 @keyframes slideInLeft {
   0% {
@@ -168,3 +167,39 @@ body {
     transform: rotate(0deg);
   }
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-box {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .greeting-img {
+    width: 1.8rem;
+  }
+
+  #hero {
+    height: 70vh;
+  }
+}
+/* .card {
+  background-image: url("../img/metaverse.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 40rem;
+  width: 40rem;
+}
+
+.card:hover {
+  background: none;
+} */

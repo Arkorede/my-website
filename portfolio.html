@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet Israel 🙃</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="relative container mx-auto p-6">
+      <!-- flex container -->
+      <div class="flex items-center justify-between">
+        <!-- logo -->
+        <a href="index.html" class="flex items-center">
+          <img src="img/water-droplet.png" alt="water-droplet" width="30" height="30" />
+          <p class="logo-text">Izrael</p>
+        </a>
+          <!-- Menu items -->
+          <!-- text-white bg-sky-800 p-1 rounded  -->
+          <div class="hidden font-bold space-x-6 md:flex">
+          <a href="index.html" class="hover:-translate-y-1 duration-200">Home</a>
+          <a href="about.html" class="hover:-translate-y-1 duration-200">About</a>
+          <a href="portfolio.html" class="hover:-translate-y-1 duration-200">Portfolio</a>
+          <a href="#" class="hover:-translate-y-1 duration-200">Contact</a>
+          </div>
+
+                  <!-- Hamburger Icon -->
+        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm-w-auto sm:self-center left-6 right-6 drop-shadow-md">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      </div>
+    </nav>
+
+    <div id="portfolio" class="portfolio">
+      <h2
+        class="text-4xl text-center font-bold text-sky-800 p-5 sm:text-5xl mt-5 mb-10"
+      >
+        What I have been doing 👨‍💻
+      </h2>
+      <div
+        id="projects"
+        class="container p-5 mx-auto grid grid-cols-1 md:p-2 md:grid-cols-3 gap-7"
+      >
+        <div
+          class="project shadow-[0_2.4rem_4.8rem_rgba(0,0,0,0.075)] rounded-[11px] overflow-hidden transition-all duration-400 bg-sky-800"
+        >
+          <img src="img/metaverse.png" alt="Metabnb" />
+          <a
+            href="https://houses-metaverse.netlify.app/"
+            target="_blank"
+            class="text-white text-center p-4 block transition duration-400 hover:text-sky-200"
+            >Metaverse/React JS</a
+          >
+          <!-- <p>Metaverse</p> -->
+        </div>
+
+        <div
+          class="project shadow-[0_2.4rem_4.8rem_rgba(0,0,0,0.075)] rounded-[11px] overflow-hidden transition-all duration-400 bg-sky-800"
+        >
+          <img src="img/budgety.png" alt="A budgeting web application" />
+          <a
+            href="https://arkorede.github.io/budget-web-app/"
+            target="_blank"
+            class="text-white text-center p-4 block transition duration-400 hover:text-sky-200"
+            >Budgety/JavaScript</a
+          >
+        </div>
+
+        <div
+          class="project shadow-[0_2.4rem_4.8rem_rgba(0,0,0,0.075)] rounded-[11px] overflow-hidden transition-all duration-400 bg-sky-800"
+        >
+          <img src="img/omnifood.png" alt="Omnifood website" />
+          <a
+            href="https://omnifood-arkorede.netlify.app/"
+            target="_blank"
+            class="text-white mt-0.5 text-center p-4 block transition duration-400 hover:text-sky-200"
+            >Omnifood/HTML & CSS</a
+          >
+        </div>
+
+        <div
+          class="project shadow-[0_2.4rem_4.8rem_rgba(0,0,0,0.075)] rounded-[11px] overflow-hidden transition-all duration-400 bg-sky-800"
+        >
+          <img src="img/Linktree_clone.png" alt="A clone of linktree website" />
+          <a
+            href="https://clonedlinktree.netlify.app/"
+            target="_blank"
+            class="text-white mt-0.5 text-center p-4 block transition duration-400 hover:text-sky-200"
+            >Linktree Clone/React JS</a
+          >
+        </div>
+
+        <div
+          class="project shadow-[0_2.4rem_4.8rem_rgba(0,0,0,0.075)] rounded-[11px] overflow-hidden transition-all duration-400 bg-sky-800"
+        >
+          <img src="img/pig-game.png" alt="Pig game" />
+          <a
+            href="https://arkorede.github.io/Pig-game/"
+            target="_blank"
+            class="text-white mt-0.5 text-center p-4 block transition duration-400 hover:text-sky-200"
+            >Pig game/JavaScript</a
+          >
+        </div>
+
+        <div
+          class="project shadow-[0_2.4rem_4.8rem_rgba(0,0,0,0.075)] rounded-[11px] overflow-hidden transition-all duration-400 bg-sky-800"
+        >
+          <img
+            src="img/simple_calculator.png"
+            alt="A simple JavaScript calculator"
+          />
+          <a
+            href="https://arkorede.github.io/simple-javaScript-calculator/"
+            target="_blank"
+            class="text-white mt-0.5 text-center p-4 block transition duration-400 hover:text-sky-200"
+            >Simple Calculator/JavaScript</a
+          >
+        </div>
+        <br />
+        <br />
+        <a
+          href="https://github.com/Arkorede"
+          class="text-center text-sky-800 my-5 p-3 border-2 border-solid border-sky-800 rounded-[11px] hover:text-white hover:bg-sky-800"
+        >
+          See more on Github
+        </a>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
