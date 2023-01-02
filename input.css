@@ -191,6 +191,12 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .contact-form {
+    width: 19rem;
+  }
+}
+
 @media (max-width: 640px) {
   .about-box {
     width: 85%;
