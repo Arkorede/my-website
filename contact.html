@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet Israel 🙃</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="relative container mx-auto p-6">
+      <!-- flex container -->
+      <div class="flex items-center justify-between">
+        <!-- logo -->
+        <a href="index.html" class="flex items-center">
+          <img src="img/water-droplet.png" alt="water-droplet" width="30" height="30" />
+          <p class="logo-text">Izrael</p>
+        </a>
+          <!-- Menu items -->
+          <!-- text-white bg-sky-800 p-1 rounded  -->
+          <div class="hidden font-bold space-x-6 md:flex">
+          <a href="index.html" class="hover:-translate-y-1 duration-200">Home</a>
+          <a href="about.html" class="hover:-translate-y-1 duration-200">About</a>
+          <a href="portfolio.html" class="hover:-translate-y-1 duration-200">Portfolio</a>
+          <a href="contact.html" class="hover:-translate-y-1 duration-200">Contact</a>
+          </div>
+
+                  <!-- Hamburger Icon -->
+        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div id="menu" class="flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm-w-auto sm:self-center left-6 right-6 drop-shadow-md">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      </div>
+    </nav>
+
+    <div class="contact container mx-auto">
+      <h2
+      class="text-4xl text-center font-bold text-sky-800 p-5 sm:text-5xl mt-5 mb-10"
+    >
+      Say Hello 😀
+    </h2>
+     
+    <!-- flex flex-col gap-4 items-center justify-center -->
+    <div class="flex flex-col gap-3 items-center justify-center">
+      <!-- <p class="text-center">I would love to hear from you</p> -->
+    <form class="contact-form bg-white p-8 rounded-[11px] shadow-[0_8px_2px_0px_rgba(0, 0, 0, 0.2)] w-96" name="say hello" netlify>
+      <div class="mb-2 pb-3 relative">
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Name"
+          class="text-sm border border-solid border-[hsl(246, 25%, 77%)] rounded-[5px] p-2.5 block w-full"
+          required
+        />
+      </div>
+
+      <!-- <div class="mb-2.5 pb-5 relative">
+      <input
+        id="last-name"
+        type="text"
+        name="full-name"
+        placeholder="Last Name"
+        class="text-sm border border-solid border-[hsl(246, 25%, 77%)] rounded-[5px] p-2.5 block w-full focus:outline-none"
+        required
+      />
+    </div> -->
+
+      <div class="mb-2.5 pb-5 relative">
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Email Address"
+          class="text-sm border border-solid border-[hsl(246, 25%, 77%)] rounded-[5px] p-2.5 block w-full focus:outline-none"
+          required
+        />
+      </div>
+
+      <textarea id="message" class="text-sm border border-solid border-[hsl(246, 25%, 77%)] rounded-[5px] p-3 block w-full" required>Your message</textarea>
+      <button class="btn--form text-[#1864ab] uppercase p-2.5 border border-solid border-[#1864ab] mt-5 rounded-[5px] font-medium">submit</button>
+    </form>
+  </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

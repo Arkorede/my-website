@@ -97,6 +97,11 @@ body {
   animation: slideInLeft 0.75s ease both;
 }
 
+.language-logo {
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
 .project {
   animation: fadeIn ease 3s;
   animation-iteration-count: 1;
@@ -112,6 +117,20 @@ body {
   transform: scale(1.1);
 }
 
+.contact-form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(99, 148, 189, 0.5);
+}
+
+.btn--form {
+  transition: all 0.4s;
+}
+
+.btn--form:hover {
+  background-color: #1864ab;
+  color: #fff;
+}
+
 /* .code {
   text-align: center;
   height: 30px;
@@ -122,11 +141,6 @@ body {
   width: 10rem;
   height: 10rem;
 } */
-
-.language-logo {
-  height: 3.2rem;
-  width: 3.2rem;
-}
 
 /* ANIMATIONS */
 @keyframes slideInLeft {
