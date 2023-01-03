@@ -23,45 +23,59 @@
     <title>Meet Israel 🙃</title>
   </head>
   <body>
-    <nav class="relative container mx-auto p-6">
-      <!-- flex container -->
-      <div class="flex items-center justify-between">
-        <!-- logo -->
-        <a href="index.html" class="flex items-center">
-          <img src="img/water-droplet.png" alt="water-droplet" width="30" height="30" />
-          <p class="logo-text">Izrael</p>
-        </a>
-          <!-- Menu items -->
-          <!-- text-white bg-sky-800 p-1 rounded  -->
-          <div class="hidden font-bold space-x-6 md:flex">
-          <a href="index.html" class="hover:-translate-y-1 duration-200">Home</a>
-          <a href="about.html" class="hover:-translate-y-1 duration-200">About</a>
-          <a href="portfolio.html" class="hover:-translate-y-1 duration-200">Portfolio</a>
-          <a href="contact.html" class="hover:-translate-y-1 duration-200">Contact</a>
-          </div>
+    <header class="header">
+      <a href="index.html" class="flex items-center">
+        <img
+          src="img/water-droplet.png"
+          alt="water-droplet"
+          width="30"
+          height="30"
+        />
+        <p class="logo-text">Izrael</p>
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a
+              class="main-nav-link hover:-translate-y-1 duration-200"
+              href="index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="main-nav-link hover:-translate-y-1 duration-200"
+              href="about.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="main-nav-link hover:-translate-y-1 duration-200"
+              href="portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              class="main-nav-link hover:-translate-y-1 duration-200"
+              href="contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-                  <!-- Hamburger Icon -->
-        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-          <span class="hamburger-top"></span>
-          <span class="hamburger-middle"></span>
-          <span class="hamburger-bottom"></span>
-        </button>
-      </div>
-      
-      <!-- Mobile Menu -->
-      <div class="md:hidden">
-        <div id="menu" class="flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm-w-auto sm:self-center left-6 right-6 drop-shadow-md">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </div>
-      </div>
-    </nav>
-    <div class="mb-12">
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <div class="about mb-12">
       <div class="flex flex-col items-center justify-center">
-        <h2 class="text-4xl text-center font-bold text-sky-800 p-5 mt-5 sm:text-5xl">
+        <h2
+          class="text-4xl text-center font-bold text-sky-800 p-5 mt-5 sm:text-5xl"
+        >
           Meet Israel 🙃
         </h2>
         <div
@@ -179,7 +193,13 @@
     </div>
 
     <script src="js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

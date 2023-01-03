@@ -1,10 +1,9 @@
-const btn = document.getElementById('menu-btn');
-const nav = document.getElementById('menu');
-// const wave = document.querySelector('.greeting-img');
+////////////////////////////////////////////
+// Make mobile navigation work
 
-btn.addEventListener('click', () => {
-  btn.classList.toggle('open');
-  nav.classList.toggle('flex');
-  nav.classList.toggle('hidden');
-  // wave.style.display = 'none';
-})
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
