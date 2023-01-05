@@ -144,6 +144,8 @@ body {
 .btn--work:hover {
   color: #fff;
   background-color: #228be6;
+  border: none;
+  /* color: #1f1d1d; */
 }
 
 .footer {

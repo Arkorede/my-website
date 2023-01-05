@@ -744,6 +744,11 @@ video {
   border-color: rgb(24 100 171 / var(--tw-border-opacity));
 }
 
+.border-\[\#1f1d1d\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(31 29 29 / var(--tw-border-opacity));
+}
+
 .border-sky-800 {
   --tw-border-opacity: 1;
   border-color: rgb(7 89 133 / var(--tw-border-opacity));
@@ -1041,7 +1046,9 @@ body {
 
 .btn--work:hover {
   color: #fff;
-  background-color: #1864ab;
+  background-color: #228be6;
+  border: none;
+  /* color: #1f1d1d; */
 }
 
 .footer {
