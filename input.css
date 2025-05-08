@@ -99,7 +99,7 @@ body {
 .about-box {
   text-align: center;
   background-color: #1864ab;
-  width: 70%;
+  width: 60%;
   animation: slideInLeft 0.75s ease both;
 }
 
